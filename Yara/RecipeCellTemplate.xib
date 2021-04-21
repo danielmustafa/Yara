@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="107" id="slc-qb-DWl" customClass="RecipeListCell" customModule="Yara" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="slc-qb-DWl" id="l80-sF-lo1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjV-xM-6lf">
+                        <rect key="frame" x="146" y="11" width="248" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="3vU-aJ-5sa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <wkWebView contentMode="scaleToFill" allowsLinkPreview="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3W-CW-rIt">
+                        <rect key="frame" x="20" y="11" width="118" height="85"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K5W-6c-FuP">
+                        <rect key="frame" x="323" y="74.5" width="20" height="20"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vegetarian" translatesAutoresizingMaskIntoConstraints="NO" id="wN8-KL-YEM">
+                        <rect key="frame" x="146" y="76" width="20" height="20"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glutenfree" translatesAutoresizingMaskIntoConstraints="NO" id="5dR-d1-Vok">
+                        <rect key="frame" x="168" y="75" width="20" height="20"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dairyfree" translatesAutoresizingMaskIntoConstraints="NO" id="3ah-DI-ays">
+                        <rect key="frame" x="193" y="75" width="20" height="20"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-N9-wdj">
+                        <rect key="frame" x="323" y="55.5" width="20" height="19"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="readyMin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScP-GO-MLN">
+                        <rect key="frame" x="356" y="56" width="63.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTB-HD-SPa">
+                        <rect key="frame" x="356" y="75" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5dR-d1-Vok" secondAttribute="trailing" constant="226" id="1Ah-Rq-yKC"/>
+                    <constraint firstAttribute="trailing" secondItem="qTB-HD-SPa" secondAttribute="trailing" constant="16" id="3pf-we-3HN"/>
+                    <constraint firstItem="ScP-GO-MLN" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="356" id="9B0-Tu-4sv"/>
+                    <constraint firstItem="qTB-HD-SPa" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="356" id="AfG-I6-bwx"/>
+                    <constraint firstAttribute="bottom" secondItem="qTB-HD-SPa" secondAttribute="bottom" constant="11" id="Bp4-lL-4V1"/>
+                    <constraint firstAttribute="trailing" secondItem="wN8-KL-YEM" secondAttribute="trailing" constant="248" id="CCB-47-w9T"/>
+                    <constraint firstItem="5dR-d1-Vok" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="75" id="DeT-zo-gJD"/>
+                    <constraint firstAttribute="trailing" secondItem="K5W-6c-FuP" secondAttribute="trailing" constant="71" id="DnR-3U-VmQ"/>
+                    <constraint firstAttribute="bottom" secondItem="K5W-6c-FuP" secondAttribute="bottom" constant="12" id="DvO-4g-Nlt"/>
+                    <constraint firstItem="ScP-GO-MLN" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="56" id="FyU-H7-iAi"/>
+                    <constraint firstAttribute="bottom" secondItem="wN8-KL-YEM" secondAttribute="bottom" constant="11" id="Ohm-jm-ijp"/>
+                    <constraint firstAttribute="bottom" secondItem="3ah-DI-ays" secondAttribute="bottom" constant="12" id="QLY-Kd-9Fz"/>
+                    <constraint firstItem="hlG-N9-wdj" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="323" id="QNi-nQ-3di"/>
+                    <constraint firstAttribute="trailing" secondItem="hlG-N9-wdj" secondAttribute="trailing" constant="71" id="Rce-yZ-gdJ"/>
+                    <constraint firstItem="S3W-CW-rIt" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="20" symbolic="YES" id="SYe-MQ-hBf"/>
+                    <constraint firstItem="S3W-CW-rIt" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="11" id="Vpx-Zm-FgG"/>
+                    <constraint firstItem="qTB-HD-SPa" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="75" id="WzU-Jw-WxD"/>
+                    <constraint firstItem="3ah-DI-ays" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="193" id="a0U-w0-pbx"/>
+                    <constraint firstAttribute="trailing" secondItem="BjV-xM-6lf" secondAttribute="trailing" constant="20" symbolic="YES" id="aLF-rr-YlF"/>
+                    <constraint firstItem="BjV-xM-6lf" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="11" id="b76-IN-Rdj"/>
+                    <constraint firstAttribute="bottom" secondItem="S3W-CW-rIt" secondAttribute="bottom" constant="11" id="bs9-5i-fbv"/>
+                    <constraint firstAttribute="bottom" secondItem="ScP-GO-MLN" secondAttribute="bottom" constant="33" id="djF-Gn-nN4"/>
+                    <constraint firstItem="wN8-KL-YEM" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="146" id="eSI-sh-mjD"/>
+                    <constraint firstItem="3ah-DI-ays" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="75" id="gBJ-PG-GR2"/>
+                    <constraint firstItem="hlG-N9-wdj" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="55" id="hJZ-5U-wpY"/>
+                    <constraint firstAttribute="bottom" secondItem="hlG-N9-wdj" secondAttribute="bottom" constant="32" id="nc6-u3-Gxb"/>
+                    <constraint firstItem="BjV-xM-6lf" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="146" id="oKx-E4-Wze"/>
+                    <constraint firstItem="K5W-6c-FuP" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="323" id="oa9-bn-bGc"/>
+                    <constraint firstItem="5dR-d1-Vok" firstAttribute="leading" secondItem="l80-sF-lo1" secondAttribute="leading" constant="168" id="q7x-eV-BGk"/>
+                    <constraint firstItem="wN8-KL-YEM" firstAttribute="top" secondItem="l80-sF-lo1" secondAttribute="top" constant="76" id="rWw-Fi-sdP"/>
+                    <constraint firstItem="5dR-d1-Vok" firstAttribute="leading" secondItem="wN8-KL-YEM" secondAttribute="trailing" constant="2" id="vvG-Qa-efW"/>
+                    <constraint firstAttribute="bottom" secondItem="5dR-d1-Vok" secondAttribute="bottom" constant="12" id="wW9-Em-Q78"/>
+                    <constraint firstAttribute="trailing" secondItem="3ah-DI-ays" secondAttribute="trailing" constant="201" id="xYQ-Mv-zWC"/>
+                    <constraint firstAttribute="trailing" secondItem="S3W-CW-rIt" secondAttribute="trailing" constant="276" id="yeY-Mm-14k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dairyFreeIndicator" destination="3ah-DI-ays" id="Cmp-Ea-MgX"/>
+                <outlet property="glutenFreeIndicator" destination="5dR-d1-Vok" id="X6a-ao-zcN"/>
+                <outlet property="imageWebView" destination="S3W-CW-rIt" id="BAb-wF-Une"/>
+                <outlet property="isVegetarianIndicator" destination="wN8-KL-YEM" id="AD2-cq-Zkb"/>
+                <outlet property="likesCountLabel" destination="qTB-HD-SPa" id="01a-kV-S2O"/>
+                <outlet property="likesThumbsUpImage" destination="K5W-6c-FuP" id="SnJ-3d-Gzq"/>
+                <outlet property="readyInMinLabel" destination="ScP-GO-MLN" id="T7F-l6-JdW"/>
+                <outlet property="recipeTitleLabel" destination="BjV-xM-6lf" id="IXc-nd-oei"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="-81.361607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="dairyfree" width="512" height="512"/>
+        <image name="glutenfree" width="860" height="900"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="vegetarian" width="512" height="512"/>
+    </resources>
+</document>
