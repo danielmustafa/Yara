@@ -115,76 +115,7 @@ class RecipeService {
             recipe.dishTypes.map(lowercaser).contains(lowerCriteria) ||
             recipe.diets.map(lowercaser).contains(lowerCriteria)
         }
-    }
-    
-//    public static func getRecipeImageById(id: Int) -> Data? {
-//        if let imageData = recipeImagesById[id] {
-//            return imageData
-//        } else {
-//            if let recipe = getRecipeById(id: id) {
-//                if let imageUrl = recipe.image {
-//                    if let data = getImageData(urlPath: imageUrl) {
-//
-//                        if !data.isEmpty {
-//                            recipeImagesById[id] = data
-//                        }
-//
-//                        return data
-//                    }
-//                } else {
-//                    //image url is null, so provide default image
-//                    return getImageData(urlPath: Bundle.main.path(forResource: "imagenotfound", ofType: "jpeg")!)
-//                }
-//            }
-//        }
-//        return nil
-//    }
-    
-//    private static func getImageData(urlPath: String) -> Data? {
-//            let imageURL = URL(string: "https://upload.wikimedia.org/wikipedia/en/7/74/InBetweenDreams.jpg")
-//
-//            if let url = imageURL {
-//                //All network operations has to run on different thread(not on main thread).
-//
-//                DispatchQueue.global(qos: .userInitiated).async {
-//                    let imageData = NSData(contentsOf: url)
-//
-//                    DispatchQueue.main.async {
-//                        if imageData != nil {
-//                            print(imageData?.bytes)
-////                            image = UIImage(data: imageData as! Data)
-////                            self.imageView.image = image
-////                            self.imageView.sizeToFit()
-//                        } else {
-//                            //image = nil
-//
-//                        }
-//                }
-//
-//            }
-//
-//        }
-//        return nil
-//    }
-//        var imgData : Data? = nil
-//        if let url = URL(string: urlPath) {
-//            let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { (data, response, error) in
-//
-//                if let error = error {
-//                    print(error)
-//                }
-//
-//                if let data = data {
-//                    imgData = data
-//                }
-//            }
-//
-//            task.resume()
-//            return imgData
-//        }
-//        return nil
-    
-    
+    }   
     
     /// Load Data functions
     public static func loadData() {
